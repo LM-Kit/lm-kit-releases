@@ -18,7 +18,7 @@ Each release ships the same version for every target, plus a checksum file.
 | Windows x64, Windows Arm64 | `LM-Kit-One-<version>-win-<arch>.msi`, and the portable `.zip` | Authenticode-signed |
 | Linux x64, Linux Arm64 | `LM-Kit-One-<version>-linux-<arch>.tar.gz` | Self-contained: extract and run |
 | macOS Apple Silicon | `LM-Kit-One-<version>-osx-arm64.pkg` | Developer ID-signed, notarized |
-| Container, linux/amd64 and linux/arm64 | `lmkit/lm-kit-one:<version>` on Docker Hub, `ghcr.io/lm-kit/lm-kit-one:<version>` on GitHub Container Registry | One tag serves both architectures |
+| Container, linux/amd64 and linux/arm64 | `lmkitone/lm-kit-one:<version>` on Docker Hub, `ghcr.io/lm-kit/lm-kit-one:<version>` on GitHub Container Registry | One tag serves both architectures |
 | Checksums | `LM-Kit-One-<version>-SHA256SUMS.txt` | SHA-256 of every asset above |
 
 ### Install
@@ -45,7 +45,7 @@ add `--gpus all` for an NVIDIA GPU:
 ```bash
 docker run -d --name lmkit -p 5189:5189 -p 7221:7221 \
   -v lmkit-state:/data/state -v lmkit-models:/data/models \
-  lmkit/lm-kit-one:<version>
+  lmkitone/lm-kit-one:<version>
 ```
 
 After a host install, the admin panel is at `http://localhost:5189/admin`. The first visit creates
