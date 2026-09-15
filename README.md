@@ -7,7 +7,7 @@ produced, signed and checked by each product's release pipeline and published as
 
 | Product | What it is | Tag prefix | Releases |
 |---|---|---|---|
-| [LM-Kit One](https://lm-kit.com/products/lm-kit-one) | A local AI server: OpenAI-compatible inference, agents, document intelligence, RAG and search on your own hardware | `one/v` | [All LM-Kit One releases](https://github.com/LM-Kit/lm-kit-releases/releases?q=one%2Fv&expanded=true) |
+| [LM-Kit One](https://lm-kit.com/products/lm-kit-one) | A local AI server: OpenAI-compatible inference, agents, document intelligence, RAG and search on your own hardware | `one/v` | [All LM-Kit One releases](https://github.com/LM-Kit/lm-kit-releases/releases?q=%22LM-Kit+One%22) |
 
 ## LM-Kit One
 
@@ -63,7 +63,7 @@ compare against the checksum file.
 
 ### Documentation
 
-- Guides: [docs.lm-kit.com/lm-kit-one](https://docs.lm-kit.com/lm-kit-one). A running server also
+- Guides: [docs.lm-kit.com/lm-kit-one](https://docs.lm-kit.com/lm-kit-one/). A running server also
   serves them at `/guides`.
 - Product page: [lm-kit.com/products/lm-kit-one](https://lm-kit.com/products/lm-kit-one)
 
