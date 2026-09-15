@@ -21,4 +21,4 @@ back-ported to an earlier version, so staying current is the way to stay covered
 ## Where security is documented
 
 The security model, the threat model and the review material for LM-Kit One are part of its
-guides at https://docs.lm-kit.com/lm-kit-one.
+guides at https://docs.lm-kit.com/lm-kit-one/.
