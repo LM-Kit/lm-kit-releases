@@ -5,13 +5,14 @@ version: the tag names the product and the version (`one/v2026.9.0`), the title 
 product, and every asset name starts with the product. Nothing is built here. The assets are
 produced, signed and checked by each product's release pipeline and published as one complete set.
 
-| Product | What it is | Tag prefix | Releases |
-|---|---|---|---|
-| [LM-Kit One](https://lm-kit.com/products/lm-kit-one) | A local AI server: OpenAI-compatible inference, agents, document intelligence, RAG and search on your own hardware | `one/v` | [All LM-Kit One releases](https://github.com/LM-Kit/lm-kit-releases/releases?q=%22LM-Kit+One%22) |
+| Product | What it is | Tag prefix | Releases | Changes |
+|---|---|---|---|---|
+| [LM-Kit One](https://lm-kit.com/products/lm-kit-one) | A local AI server: OpenAI-compatible inference, agents, document intelligence, RAG and search on your own hardware | `one/v` | [All LM-Kit One releases](https://github.com/LM-Kit/lm-kit-releases/releases?q=%22LM-Kit+One%22) | [Changelog](https://docs.lm-kit.com/lm-kit-one/changelog/) |
 
 ## LM-Kit One
 
-Each release ships the same version for every target, plus a checksum file.
+Each release ships the same version for every target, plus a checksum file. What changed in each
+version is in the [changelog](https://docs.lm-kit.com/lm-kit-one/changelog/).
 
 | Target | Asset | Notes |
 |---|---|---|
@@ -48,6 +49,9 @@ docker run -d --name lmkit -p 5189:5189 -p 7221:7221 \
   lmkitone/lm-kit-one:<version>
 ```
 
+Volumes, GPU passthrough, health probes, Docker Compose and Kubernetes are covered in the
+[container guide](https://docs.lm-kit.com/lm-kit-one/guides/containers.html).
+
 After a host install, the admin panel is at `http://localhost:5189/admin`. The first visit creates
 the operator account. Everything else, from choosing a model to running as a service or behind a
 reverse proxy, is in the guides.
@@ -65,6 +69,8 @@ compare against the checksum file.
 
 - Guides: [docs.lm-kit.com/lm-kit-one](https://docs.lm-kit.com/lm-kit-one/). A running server also
   serves them at `/guides`.
+- Changelog: [docs.lm-kit.com/lm-kit-one/changelog](https://docs.lm-kit.com/lm-kit-one/changelog/)
+- Container guide: [docs.lm-kit.com/lm-kit-one/guides/containers.html](https://docs.lm-kit.com/lm-kit-one/guides/containers.html)
 - Product page: [lm-kit.com/products/lm-kit-one](https://lm-kit.com/products/lm-kit-one)
 
 ## Support and security
